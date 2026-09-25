@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop | SÉYRA</title>
+<meta name="description" content="Shop SÉYRA bedsheets, cushions, fluffy throws, neck pillows and bolsters — all sizes available, delivered nationwide in Ghana.">
+<link rel="icon" href="data:,">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-seyra">
+  <div class="container">
+    <a class="navbar-brand brand-mark" href="index.html">SÉ<span>Y</span>RA</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-2" style="color:var(--plum)"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMain">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="products.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Help</a>
+          <ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="delivery.html">Delivery &amp; returns</a></li><li><a class="dropdown-item" href="care-guide.html">Care guide</a></li><li><a class="dropdown-item" href="faqs.html">FAQs</a></li></ul>
+        </li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn-seyra" href="https://wa.me/233537732901" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp"></i> Order Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <p class="hero-eyebrow">Shop</p>
+    <h1 style="font-size:clamp(2rem,4vw,3rem)">Find your next favourite, for your wardrobe or home.</h1>
+    <p class="lead mt-2" style="max-width:60ch">Browse dresses and home essentials. Listed prices are in Ghana cedis (GH₵); message us to confirm current dress styles, sizes and prices.</p>
+    <div class="shop-trust mt-4"><span><i class="bi bi-check-circle-fill"></i> Prices confirmed before payment</span><span><i class="bi bi-truck"></i> Delivery across Ghana</span><span><i class="bi bi-shield-check"></i> Personal order support</span></div>
+  </div>
+</header>
+
+<section class="pt-5">
+  <div class="container">
+    <div class="shop-toolbar mb-4">
+      <div class="shop-search"><i class="bi bi-search"></i><input id="productSearch" type="search" aria-label="Search products" placeholder="Search the collection"></div>
+      <label class="sort-control" for="productSort">Sort <select id="productSort" aria-label="Sort products"><option value="featured">Featured</option><option value="name">Name: A to Z</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></label>
+    </div>
+    <div class="filter-row mb-4" role="group" aria-label="Filter products">
+      <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">All items</button>
+      <button class="filter-chip" type="button" data-filter="bedding" aria-pressed="false">Bedding</button>
+      <button class="filter-chip" type="button" data-filter="living" aria-pressed="false">Living</button>
+      <button class="filter-chip" type="button" data-filter="support" aria-pressed="false">Pillows & support</button>
+      <button class="filter-chip" type="button" data-filter="fashion" aria-pressed="false">Dresses</button>
+      <span id="productCount" class="product-count ms-md-auto" aria-live="polite">6 products</span>
+    </div>
+    <div class="row g-4" id="productGrid">
+
+      <!-- Bedsheets -->
+      <div class="col-md-6 col-lg-4" data-product-card data-category="bedding" data-name="Bedsheets" data-price="120">
+        <div class="product-card">
+          <div class="swatch swatch-plum"><i class="bi bi-moon-stars"></i></div>
+          <div class="body">
+            <span class="badge-avail">All sizes available</span>
+            <h4 class="h5 mt-3">Bedsheets</h4>
+            <p class="sizes mb-2">Single, 4x6, 5x6 &amp; 6x6 sizes</p>
+            <div class="d-flex align-items-baseline gap-2">
+              <span class="price">GH₵120</span>
+              <span class="text-secondary small">– GH₵150 by size</span>
+            </div>
+            <button class="btn-seyra w-100 justify-content-center mt-3" data-cart-item="Bedsheets — size to be confirmed">
+              <i class="bi bi-bag-plus"></i> Add to order list
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cushions -->
+      <div class="col-md-6 col-lg-4" data-product-card data-category="living" data-name="Cushions" data-price="60">
+        <div class="product-card">
+          <div class="swatch swatch-rose"><i class="bi bi-square-half"></i></div>
+          <div class="body">
+            <span class="badge-avail">In stock</span>
+            <h4 class="h5 mt-3">Cushions</h4>
+            <p class="sizes mb-2">Sofa &amp; bed sizes available</p>
+            <div class="d-flex align-items-baseline gap-2">
+              <span class="price">GH₵60</span>
+              <span class="text-secondary small">each</span>
+            </div>
+            <button class="btn-seyra w-100 justify-content-center mt-3" data-cart-item="Cushions">
+              <i class="bi bi-bag-plus"></i> Add to order list
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fluffy Throws -->
+      <div class="col-md-6 col-lg-4" data-product-card data-category="living" data-name="Fluffy Throws" data-price="70">
+        <div class="product-card">
+          <div class="swatch swatch-sand"><i class="bi bi-cloud"></i></div>
+          <div class="body">
+            <span class="badge-avail">In stock</span>
+            <h4 class="h5 mt-3">Fluffy Throws</h4>
+            <p class="sizes mb-2">Extra-soft, for bed or sofa</p>
+            <div class="d-flex align-items-baseline gap-2">
+              <span class="price">GH₵70</span>
+              <span class="text-secondary small">each</span>
+            </div>
+            <button class="btn-seyra w-100 justify-content-center mt-3" data-cart-item="Fluffy Throws">
+              <i class="bi bi-bag-plus"></i> Add to order list
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Neck Pillow -->
+      <div class="col-md-6 col-lg-4" data-product-card data-category="support" data-name="Neck Pillow" data-price="70">
+        <div class="product-card">
+          <div class="swatch swatch-gold"><i class="bi bi-record-circle"></i></div>
+          <div class="body">
+            <span class="badge-avail">In stock</span>
+            <h4 class="h5 mt-3">Neck Pillow</h4>
+            <p class="sizes mb-2">Great for travel &amp; the office</p>
+            <div class="d-flex align-items-baseline gap-2">
+              <span class="price">GH₵70</span>
+              <span class="text-secondary small">each</span>
+            </div>
+            <button class="btn-seyra w-100 justify-content-center mt-3" data-cart-item="Neck Pillows">
+              <i class="bi bi-bag-plus"></i> Add to order list
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bolsters -->
+      <div class="col-md-6 col-lg-4" data-product-card data-category="support" data-name="Bolsters" data-price="80">
+        <div class="product-card">
+          <div class="swatch swatch-ink"><i class="bi bi-capsule"></i></div>
+          <div class="body">
+            <span class="badge-avail">In stock</span>
+            <h4 class="h5 mt-3">Bolsters</h4>
+            <p class="sizes mb-2">Long support pillows</p>
+            <div class="d-flex align-items-baseline gap-2">
+              <span class="price">GH₵80</span>
+              <span class="text-secondary small">each</span>
+            </div>
+            <button class="btn-seyra w-100 justify-content-center mt-3" data-cart-item="Bolsters">
+              <i class="bi bi-bag-plus"></i> Add to order list
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dresses -->
+      <div class="col-md-6 col-lg-4" data-product-card data-category="fashion" data-name="Dresses" data-price="">
+        <div class="product-card">
+          <div class="swatch swatch-rose"><i class="bi bi-person-standing-dress"></i></div>
+          <div class="body">
+            <span class="badge-avail">Ask for current styles</span>
+            <h4 class="h5 mt-3">Dresses</h4>
+            <p class="sizes mb-2">Styles, sizes and availability vary by collection.</p>
+            <div class="d-flex align-items-baseline gap-2"><span class="price">Ask for price</span></div>
+            <button class="btn-seyra w-100 justify-content-center mt-3" data-cart-item="Dresses — please share current styles, size and price">
+              <i class="bi bi-bag-plus"></i> Add to order list
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Delivery info card -->
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card h-100 d-flex flex-column justify-content-between" style="background:var(--plum)">
+          <div class="p-4">
+            <i class="bi bi-truck fs-2" style="color:var(--rose-light)"></i>
+            <h4 class="h5 mt-3" style="color:var(--ivory)">Nationwide delivery</h4>
+            <p class="small mb-0" style="color:rgba(251,246,238,0.75)">We deliver across Ghana. Fees are kept affordable and depend on your location — ask us when you order.</p>
+          </div>
+          <a href="contact.html" class="btn-seyra-light m-4 justify-content-center">Ask about delivery</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="order-list-panel mt-5" id="orderListPanel" aria-live="polite">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div><p class="section-tag mb-1">Your order list <span class="order-count" id="orderCount">0</span></p><h2 class="h4 mb-1">Collect your favourites, then send one message.</h2><p class="small text-secondary mb-0">Your list stays on this device. We’ll confirm final prices, sizes and delivery before payment.</p></div>
+        <button class="btn-seyra" type="button" id="sendOrderList" disabled><i class="bi bi-whatsapp"></i> Send list on WhatsApp</button>
+      </div>
+      <ul class="order-list-items list-unstyled mt-3 mb-0" id="orderListItems"><li class="text-secondary small">Your list is empty. Add an item above to get started.</li></ul>
+      <button class="btn btn-link btn-sm text-secondary px-0 mt-2" type="button" id="clearOrderList" hidden>Clear list</button>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <p class="section-tag">How to order</p>
+        <h2 class="section-heading">Call, WhatsApp, Snapchat or pay by MoMo — whatever's easiest.</h2>
+        <p class="section-sub mt-2">Message us the item and your delivery location, and we'll confirm price and timing before you pay.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a href="contact.html" class="btn-seyra">Contact SÉYRA <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="fbrand">SÉYRA</div>
+        <p class="mt-2 small">Fashion • Home • Lifestyle essentials, made comfortable and delivered across Ghana.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5 class="h6">Explore</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="index.html">Home</a></li>
+          <li class="mb-2"><a href="products.html">Shop</a></li>
+          <li class="mb-2"><a href="about.html">About</a></li>
+          <li class="mb-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5 class="h6">Contact</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><i class="bi bi-telephone me-2"></i>0537 732 901</li>
+          <li class="mb-2"><i class="bi bi-telephone me-2"></i>0597 303 787</li>
+          <li class="mb-2"><i class="bi bi-whatsapp me-2"></i>Order on WhatsApp</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5 class="h6">Follow</h5>
+        <div class="d-flex gap-3 fs-5">
+          <a href="https://wa.me/233537732901" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" aria-label="Snapchat"><i class="bi bi-snapchat"></i></a>
+          <a href="tel:+233537732901" aria-label="Call"><i class="bi bi-telephone"></i></a>
+        </div>
+        <p class="small mt-3 mb-0">Also active on Snapchat.</p>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <p class="small mb-0 text-center">© <span id="year"></span> SÉYRA. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

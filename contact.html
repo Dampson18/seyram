@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | SÉYRA</title>
+<meta name="description" content="Contact SÉYRA about dresses, bedsheets, cushions, throws and pillows. Confirm current styles, sizes, prices and delivery by WhatsApp or phone.">
+<link rel="icon" href="data:,">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-seyra">
+  <div class="container">
+    <a class="navbar-brand brand-mark" href="index.html">SÉ<span>Y</span>RA</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-2" style="color:var(--plum)"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMain">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Help</a>
+          <ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="delivery.html">Delivery &amp; returns</a></li><li><a class="dropdown-item" href="care-guide.html">Care guide</a></li><li><a class="dropdown-item" href="faqs.html">FAQs</a></li></ul>
+        </li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn-seyra" href="https://wa.me/233537732901" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp"></i> Order Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <p class="hero-eyebrow">Get in touch</p>
+    <h1 style="font-size:clamp(2rem,4vw,3rem);max-width:18ch">Tell us what you need — we'll sort the rest.</h1>
+  </div>
+</header>
+
+<section class="pt-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="contact-panel h-100">
+          <h3 class="h4 mb-4">Reach SÉYRA directly</h3>
+
+          <div class="contact-line">
+            <div class="icon"><i class="bi bi-telephone"></i></div>
+            <div>
+              <div class="fw-semibold">Call or text</div>
+              <a href="tel:+233537732901" class="text-secondary">0537 732 901</a><br>
+              <a href="tel:+233597303787" class="text-secondary">0597 303 787</a>
+            </div>
+          </div>
+
+          <div class="contact-line">
+            <div class="icon"><i class="bi bi-whatsapp"></i></div>
+            <div>
+              <div class="fw-semibold">WhatsApp</div>
+              <a href="https://wa.me/233537732901" target="_blank" rel="noopener" class="text-secondary">Chat with us to order</a>
+            </div>
+          </div>
+
+          <div class="contact-line">
+            <div class="icon"><i class="bi bi-snapchat"></i></div>
+            <div>
+              <div class="fw-semibold">Snapchat</div>
+              <span class="text-secondary">Also active on Snapchat</span>
+            </div>
+          </div>
+
+          <div class="contact-line">
+            <div class="icon"><i class="bi bi-wallet2"></i></div>
+            <div>
+              <div class="fw-semibold">Mobile Money (MoMo)</div>
+              <span class="text-secondary">0597 303 787</span>
+            </div>
+          </div>
+
+          <div class="contact-line">
+            <div class="icon"><i class="bi bi-truck"></i></div>
+            <div>
+              <div class="fw-semibold">Delivery</div>
+              <span class="text-secondary">Nationwide across Ghana — fees are affordable and depend on your location.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="contact-panel h-100">
+          <h3 class="h4 mb-2">Send an order enquiry</h3>
+          <p class="text-secondary small mb-4">Fill this in and it opens WhatsApp with your details ready to send — nothing is stored on this page.</p>
+          <form id="enquiryForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="fName">Your name</label>
+                <input type="text" class="form-control" id="fName" placeholder="e.g. Ama Mensah" required>
+              </div>
+              <div class="col-md-6">
+                <label for="fLocation">Delivery location</label>
+                <input type="text" class="form-control" id="fLocation" placeholder="e.g. Kasoa, Central Region">
+              </div>
+              <div class="col-12">
+                <label for="fItem">Item(s) you'd like</label>
+                <input type="text" class="form-control" id="fItem" placeholder="e.g. a dress (size M), 6x6 bedsheet" required>
+              </div>
+              <div class="col-12">
+                <label for="fNote">Anything else?</label>
+                <textarea class="form-control" id="fNote" rows="3" placeholder="Colour preference, size questions, etc."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-seyra w-100 justify-content-center">
+                  <i class="bi bi-whatsapp"></i> Send via WhatsApp
+                </button>
+                <div id="formFeedback" class="mt-3 small"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="container text-center">
+    <p class="section-tag">Before you order</p>
+    <h2 class="section-heading mx-auto">Tell us the size or style you have in mind.</h2>
+    <p class="section-sub mx-auto mt-2">Share dress sizing details or your bed and cushion measurements, and we'll help check current options and fit.</p>
+    <a href="products.html" class="btn-seyra mt-3">See prices &amp; sizes</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="fbrand">SÉYRA</div>
+        <p class="mt-2 small">Fashion • Home • Lifestyle essentials, made comfortable and delivered across Ghana.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5 class="h6">Explore</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="index.html">Home</a></li>
+          <li class="mb-2"><a href="products.html">Shop</a></li>
+          <li class="mb-2"><a href="about.html">About</a></li>
+          <li class="mb-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5 class="h6">Contact</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><i class="bi bi-telephone me-2"></i>0537 732 901</li>
+          <li class="mb-2"><i class="bi bi-telephone me-2"></i>0597 303 787</li>
+          <li class="mb-2"><i class="bi bi-whatsapp me-2"></i>Order on WhatsApp</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5 class="h6">Follow</h5>
+        <div class="d-flex gap-3 fs-5">
+          <a href="https://wa.me/233537732901" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" aria-label="Snapchat"><i class="bi bi-snapchat"></i></a>
+          <a href="tel:+233537732901" aria-label="Call"><i class="bi bi-telephone"></i></a>
+        </div>
+        <p class="small mt-3 mb-0">Also active on Snapchat.</p>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <p class="small mb-0 text-center">© <span id="year"></span> SÉYRA. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
